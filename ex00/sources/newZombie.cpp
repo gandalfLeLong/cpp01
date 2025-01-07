@@ -12,8 +12,10 @@
 
 #include "Zombie.hpp"
 
-Zombie* Zombie::newZombie(std::string name)
+Zombie* newZombie(std::string name)
 {
-    Zombie instance;
+    Zombie *instance;
     
+    instance = new Zombie(name);
+    return (instance);
 }
