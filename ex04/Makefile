@@ -1,4 +1,4 @@
-NAME	= sed
+NAME	= replace
 
 #----------SOURCES-----------#
 
@@ -6,11 +6,12 @@ SRC_DIR	= sources/
 OBJ_DIR	= obj/
 INC_DIR	= includes/
 
-HEADER	= ${INC_DIR}Coucou.hpp \
+HEADER	= ${INC_DIR}Replace.hpp \
 	  
 INCLUDE = -I ${INC_DIR}
 
-SRC	= main.cpp \
+SRC	=	main.cpp \
+		Replace.cpp \
 
 OBJ	= ${addprefix ${OBJ_DIR}, ${SRC:.cpp=.o}}
 
